@@ -1,0 +1,33 @@
+{
+  "name": "redux-inject",
+  "version": "1.0.1",
+  "description": "Redux middleware generator that allows dependencies to be injected into action creators",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": ["redux", "dependency injection"],
+  "author": "Brad Harms <brad.k.harms@gmail.com> (http://www.bradsbytes.com/)",
+  "license": "MIT",
+  "homepage": "http://github.com/bradharms/redux-inject/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradharms/redux-inject.git"
+  },
+  "engines": {
+    "node": ">= 5.0.1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-browserify": "^4.4.2",
+    "karma-jasmine": "^0.3.6",
+    "redux": "^3.0.5",
+    "redux-thunk": "^1.0.3"
+  },
+  "scripts": {
+    "test": "jasmine && karma start"
+  }
+}
