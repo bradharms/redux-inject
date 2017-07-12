@@ -35,6 +35,7 @@ const createFooAction = (payload) => ({dep1, dep2}) => {
 ```
 
 ## Rational
+
 This middleware was created to resolve a problem I faced while trying to
 write isomorphic model access code. My action creators needed to be used on
 both the client and the server, but they needed to access model data in
@@ -44,6 +45,8 @@ dependency injection, and the best way I could think to do it was using a
 Redux middleware.
 
 ## Use with Redux-Thunk
+
+> **NOTE:** Redux-Thunk now includes the [withExtraArgument()](https://github.com/gaearon/redux-thunk#injecting-a-custom-argument) function, a feature that was intendded to solve the same problem as this library. If you were intending to use redux-inject and redux-thunk together, you may want to consider trying that first.
 
 Though not required, this module was intended to be used in conjunction with [redux-thunk](https://github.com/gaearon/redux-thunk). When the two
 are used together, you must be careful to ensure that the action creators
