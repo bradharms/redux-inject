@@ -1,4 +1,7 @@
-# Redux Inject
+# Redux Inject (Archived)
+
+> **NOTE:** This project is archived. No further updates will be made.
+
 Redux middleware generator that allows dependencies to be injected into action creators.
 
 ## Installation
